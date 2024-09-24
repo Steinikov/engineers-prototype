@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
+    overflow: hidden;
+}
+
+/* Рамка телефона */
+.phone-frame {
+    width: 375px;
+    height: 667px;
+    background-color: #1C2033;
+    border-radius: 30px;
+    border: 8px solid #333;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+/* Логотип */
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+/* Фиксированный верхний блок */
+header.intro-section {
+    background: #1C2033;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Заголовок */
+header h1 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Кнопки Войти и Зарегистрироваться */
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.neumorphic-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    background: #2A2A2A;
+    border: none;
+    box-shadow: 4px 4px 8px #101010, -4px -4px 8px #2A2A2A;
+    border-radius: 20px;
+    color: #A80532;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.neumorphic-btn:hover {
+    background-color: #333333;
+    color: #D4B59E;
+}
+
+/* Прокручиваемая часть */
+.phone-content {
+    width: 100%;
+    height: calc(100% - 130px);
+    margin-top: 130px;
+    overflow-y: scroll;
+    padding-bottom: 70px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.phone-content::-webkit-scrollbar {
+    display: none;
+}
+
+.neumorphic {
+    background: #1E1E1E;
+    box-shadow: 6px 6px 12px #101010, -6px -6px 12px #2A2A2A;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+/* Фиксированная нижняя панель */
+.bottom-nav {
+    background-color: #A80532;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 4px 4px 12px #101010, -4px -4px 12px #2A2A2A;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.bottom-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-nav li {
+    text-align: center;
+}
+
+.bottom-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.bottom-nav a:hover {
+    color: #D4B59E;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #D4B59E;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.small-icon {
+    font-size: 1.1rem;
+    margin-right: 6px;
+    color: #D4B59E;
+}
+
+/* Фото профиля */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Опыт работы */
+.experience-item {
+    margin-bottom: 15px;
+}
+
+.experience-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* Навыки */
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+/* Проекты */
+.project-item {
+    margin-bottom: 15px;
+}
+
+.project-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.project-item p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
